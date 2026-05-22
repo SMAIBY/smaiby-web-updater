@@ -8,9 +8,7 @@
       "DOM",
       "DOM.Iterable"
     ],
-    "types": [
-      "vite/client"
-    ],
+    
     "skipLibCheck": true,
     "moduleResolution": "Bundler",
     "allowImportingTsExtensions": true,
