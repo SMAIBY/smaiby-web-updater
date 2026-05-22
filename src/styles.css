@@ -1,0 +1,108 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #162018;
+  background: #f5f7f2;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+.app {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 32px 20px 56px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ffffff, #eaf5df);
+  border: 1px solid #dfead8;
+  border-radius: 28px;
+  padding: 28px;
+  box-shadow: 0 18px 40px rgba(20, 40, 20, 0.08);
+  margin-bottom: 24px;
+}
+
+.hero h1 { margin: 0 0 8px; font-size: 32px; }
+.hero p { margin: 0; color: #5d675c; line-height: 1.5; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+@media (max-width: 850px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e2e9dd;
+  border-radius: 22px;
+  padding: 20px;
+  box-shadow: 0 10px 28px rgba(20, 40, 20, 0.06);
+}
+
+.card h2 { margin: 0 0 14px; font-size: 20px; }
+.row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+label { display: block; font-weight: 650; margin: 14px 0 6px; }
+input {
+  width: 100%;
+  border: 1px solid #d4dfce;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-size: 14px;
+  outline: none;
+}
+input:focus { border-color: #8cc020; box-shadow: 0 0 0 4px rgba(140, 192, 32, 0.12); }
+button {
+  border: 0;
+  background: #8cc020;
+  color: white;
+  border-radius: 14px;
+  padding: 11px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+button.secondary { background: #1f2a1f; }
+button.ghost { background: #eef3ea; color: #263126; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+
+.progressOuter {
+  width: 100%;
+  height: 14px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #edf2e9;
+  margin-top: 14px;
+}
+.progressInner {
+  height: 100%;
+  width: 0%;
+  background: #8cc020;
+  transition: width 160ms ease;
+}
+.log {
+  background: #101510;
+  color: #dff7d7;
+  border-radius: 18px;
+  padding: 14px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  min-height: 360px;
+  max-height: 560px;
+  overflow: auto;
+  white-space: pre-wrap;
+  font-size: 12px;
+  line-height: 1.45;
+}
+.badge {
+  display: inline-flex;
+  border-radius: 999px;
+  padding: 6px 10px;
+  background: #eef3ea;
+  color: #526052;
+  font-size: 12px;
+  font-weight: 700;
+}
+.warn { color: #915800; }
+.ok { color: #287a2b; }
