@@ -22,7 +22,7 @@ app.innerHTML = `
         </div>
 
         <label for="manifestUrl">Manifest URL</label>
-        <input id="manifestUrl" value="https://example.com/smaiby/model_manifest.json" />
+        <input id="manifestUrl" value="https://raw.githubusercontent.com/SMAIBY/smaiby-ota/refs/heads/main/model-manifest.json" />
 
         <div class="row" style="margin-top: 14px;">
           <button id="loadManifestBtn" disabled>Manifest laden</button>

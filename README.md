@@ -31,10 +31,12 @@ Vorgehen:
 
 Die Web-App erwartet ein Manifest, z. B.:
 
+https://raw.githubusercontent.com/SMAIBY/smaiby-ota/refs/heads/main/model-manifest.json
+
 ```json
 {
   "version": "1.0.1",
-  "url": "https://example.com/smaiby_model_v1_0_1.bin",
+  "url": "https://raw.githubusercontent.com/SMAIBY/smaiby-ota/refs/heads/main/2026-06-29_ei-mark1-object-detection-tensorflow-lite-int8-quantized-model.264_vela.tflite",
   "size": 734512,
   "sha256": "PUT_REAL_SHA256_HERE"
 }
